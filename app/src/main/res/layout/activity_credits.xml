@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.isec.tp_1.Credits"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4E4E4E">
+
+    <TextView
+        android:id="@+id/menu_button_logo_credits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
+        android:fontFamily="@font/lato_blackitalic"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:background="@color/red_dark"
+        android:textColor="@color/white"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <!-- guidelineMenuVerticalRight -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <!-- guidelineMenuHorizontalTop -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <!-- guidelineMenuHorizontalBottom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <TextView
+        android:id="@+id/students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="@string/students"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop" />
+
+    <TextView
+        android:id="@+id/aluno1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="40"
+        android:text="Diogo Pinto,
+2020133653"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/students" />
+
+    <TextView
+        android:id="@+id/aluno2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="40"
+        android:text="Daniel Lopes,
+2018016312
+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/students" />
+
+
+    <TextView
+        android:id="@+id/teachers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="@string/teachers"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+
+    <TextView
+        android:id="@+id/prof1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="40"
+        android:text="Álvaro"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/teachers" />
+
+    <TextView
+        android:id="@+id/prof2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="40"
+        android:text="Filipe"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/teachers" />
+
+    <TextView
+        android:id="@+id/cadeira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="AMOV 2022/2023 - Kotlin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

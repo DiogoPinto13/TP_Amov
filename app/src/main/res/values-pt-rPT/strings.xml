@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">App name</string>
+    <string name="game_title">Jogo de Matemática</string>
+    <string name="multiplayer">Créditos</string>
+    <string name="how_to_play">Como jogar</string>
+    <string name="top_score">Top pontos</string>
+    <string name="settings">Perfil</string>
+    <string name="invalid_movement">Movimento errado</string>
+    <string name="how_to_play_text">
+1-Escolhe uma linha ou coluna com a expressão matemática que tenha o maior valor.
+Arrasta o teu dedo verticalmente ou horizontalmente para selecionar a linha ou coluna.
+Depois clica uma vez fora do tabuleiro para confirmar e verificar a expressão escolhida.
+Irás ganhar 2 pontos por escolher a expressão com o valor mais alto e 1 ponto pela segunda maior.
+Irás ter X tempo para responder a todas as perguntas em cada nível, por cada resposta certa
+irá adiconar X tempo bônus.
+Boa sorte!
+    </string>
+    <string name="language">Língua</string>
+    <string name="account">Conta</string>
+    <string name="introduce_the_name_of_the_user">Introduza o nome do utilizador</string>
+    <string name="username">nome de utilizador</string>
+    <string name="btnChooseImage">Escolhe uma imagem</string>
+    <string name="user_image">imagem do utilizador</string>
+    <string name="mnCreate">criar</string>
+    <string name="msg_empty_title">Título vazio</string>
+    <string name="msg_no_image">Nenhuma imagem encontrada</string>
+    <string name="firstscorename">#1utilizador</string>
+    <string name="secondscorename">#2utilizador</string>
+    <string name="thirdscorename">#3utilizador</string>
+    <string name="fourthscorename">#4utilizador</string>
+    <string name="fifthscorename">#5utilizador</string>
+    <string name="firstimename">#1utilizador</string>
+    <string name="secondtimename">#2utilizador</string>
+    <string name="thirdtimename">#3utilizador</string>
+    <string name="fourthtimename">#4utilizador</string>
+    <string name="fifthtimename">#5utilizador</string>
+    <string name="scorepointfirst">0</string>
+    <string name="scorepointsecond">0</string>
+    <string name="scorepointthird">0</string>
+    <string name="scorepointfourth">0</string>
+    <string name="scorepointfifth">0</string>
+    <string name="timepointfirst">0</string>
+    <string name="timepointsecond">0</string>
+    <string name="timepointthird">0</string>
+    <string name="timepointfourth">0</string>
+    <string name="timepointfifth">0</string>
+    <string name="game_correct_ans">correto! +2 pontos</string>
+    <string name="game_second_best_ans">segunda melhor expressão! +1 ponto</string>
+    <string name="game_wrong_ans">errado! tenta outra vez...</string>
+    <string name="game_pass_next_board">A passar para o próximo nível...</string>
+    <string name="game_game_over_win">GG! ganhaste!</string>
+    <string name="game_game_over_lost">FIM DO JOGO!</string>
+    <string name="game_confirm_leave">Tens a certeza que queres sair?</string>
+    <string name="game_yes_opt">Sim</string>
+    <string name="game_no_opt">Não</string>
+    <string name="singleplayer">Um jogador</string>
+    <string name="score">Pontos</string>
+    <string name="name">Nome</string>
+    <string name="time">Tempo</string>
+    <string name="name2">Nome</string>
+    <string name="score1">Pontos:</string>
+    <string name="time_left">Tempo restante:</string>
+    <string name="current_tab">Respostas Correctas:</string>
+    <string name="level">Nível:</string>
+    <string name="score_land">Pontos:</string>
+    <string name="current_tab_land">Respostas Corretas:</string>
+    <string name="level_land">Nível:</string>
+    <string name="time_left_land">Tempo restante:</string>
+    <string name="credits">Créditos</string>
+    <string name="students">Alunos</string>
+    <string name="teachers">Professores</string>
+
+</resources>

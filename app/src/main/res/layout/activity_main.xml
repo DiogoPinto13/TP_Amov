@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.isec.tp_1.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4E4E4E">
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+    <!-- guidelineMenuVerticalRight -->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+    <!-- guidelineMenuHorizontalTop -->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+    <!-- guidelineMenuHorizontalMiddle -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+    <!-- guidelineMenuHorizontalBottom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- menu_button_logo_credits -->
+    <Button
+        android:id="@+id/menu_button_logo_credits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:fontFamily="@font/lato_blackitalic"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <!-- menu_button_singleplayer -->
+    <Button
+        android:id="@+id/menu_button_singleplayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/singleplayer"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMenuHorizontalBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalMiddle"
+        app:layout_constraintVertical_bias="0.0" />
+    <!-- menu_button_multiplayer -->
+    <Button
+        android:id="@+id/menu_button_multiplayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/multiplayer"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMenuHorizontalBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button_singleplayer"
+        app:layout_constraintVertical_bias="0.0" />
+    <!-- menu_button_howto -->
+    <Button
+        android:id="@+id/menu_button_how_to_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/how_to_play"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button_multiplayer"
+        app:layout_constraintVertical_bias="0.0" />
+    <!-- menu_button_topscore -->
+    <Button
+        android:id="@+id/menu_button_topscore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/top_score"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button_how_to_play"
+        app:layout_constraintVertical_bias="0.0" />
+    <!-- menu_button_Settings -->
+    <Button
+        android:id="@+id/menu_button_Settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/settings"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button_topscore"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

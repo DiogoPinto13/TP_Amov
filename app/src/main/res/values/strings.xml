@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">App name</string>
+    <string name="game_title">Mat Game</string>
+    <string name="multiplayer">Credits</string>
+    <string name="how_to_play">How to play</string>
+    <string name="top_score">Top Score</string>
+    <string name="settings">Profile</string>
+    <string name="invalid_movement">You performed an invalid movement</string>
+    <string name="how_to_play_text">
+1-Choose the line or column with the mathematical expression containing the largest value.
+Slide your finger vertically or horizontally to select the line or column.
+Then click one time outside of the board so it checks if its correct.
+You get 2 points for choosing the largest value or 1 point for the second largest.
+You get X amount of time to do every boards in each level.
+You will earn extra bonus time per each correct expression that you selected.
+Good luck!
+    </string>
+    <string name="language">Language</string>
+    <string name="account">Account</string>
+    <string name="introduce_the_name_of_the_user">Introduce the name of the user</string>
+    <string name="username">username</string>
+    <string name="btnChooseImage">Choose Image</string>
+    <string name="user_image">User image</string>
+    <string name="mnCreate">create</string>
+    <string name="msg_empty_title">Empty Title</string>
+    <string name="msg_no_image">No Image found</string>
+    <string name="firstscorename">#1user</string>
+    <string name="secondscorename">#2user</string>
+    <string name="thirdscorename">#3user</string>
+    <string name="fourthscorename">#4user</string>
+    <string name="fifthscorename">#5user</string>
+    <string name="firstimename">#1user</string>
+    <string name="secondtimename">#2user</string>
+    <string name="thirdtimename">#3user</string>
+    <string name="fourthtimename">#4user</string>
+    <string name="fifthtimename">#5user</string>
+    <string name="scorepointfirst">0</string>
+    <string name="scorepointsecond">0</string>
+    <string name="scorepointthird">0</string>
+    <string name="scorepointfourth">0</string>
+    <string name="scorepointfifth">0</string>
+    <string name="timepointfirst">0</string>
+    <string name="timepointsecond">0</string>
+    <string name="timepointthird">0</string>
+    <string name="timepointfourth">0</string>
+    <string name="timepointfifth">0</string>
+    <string name="game_correct_ans">correct! +2 points</string>
+    <string name="game_second_best_ans">second best expression! +1 point</string>
+    <string name="game_wrong_ans">wrong! try again...</string>
+    <string name="game_pass_next_board">Passing to the next board...</string>
+    <string name="game_game_over_win">GG! You won!</string>
+    <string name="game_game_over_lost">GAME OVER!</string>
+    <string name="game_confirm_leave">Are you sure you want to leave?</string>
+    <string name="game_yes_opt">Yes</string>
+    <string name="game_no_opt">No</string>
+    <string name="singleplayer">Singleplayer</string>
+    <string name="score">Score</string>
+    <string name="name">Name</string>
+    <string name="time">Time</string>
+    <string name="name2">Name</string>
+    <string name="score1">Score:</string>
+    <string name="time_left">Time Left:</string>
+    <string name="current_tab">Correct Answers:</string>
+    <string name="level">Level:</string>
+    <string name="score_land">Score:</string>
+    <string name="time_left_land">Time Left:</string>
+    <string name="current_tab_land">Correct Answers:</string>
+    <string name="level_land">Level:</string>
+    <string name="credits">Credits</string>
+    <string name="students">Students</string>
+    <string name="teachers">Teachers</string>
+</resources>

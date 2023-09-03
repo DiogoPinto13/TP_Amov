@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813979298547",
+    "project_id": "mathgamekinggrimm",
+    "storage_bucket": "mathgamekinggrimm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813979298547:android:7ef62081a40dfdddcd2586",
+        "android_client_info": {
+          "package_name": "pt.isec.tp_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813979298547-p1cpj4qc7dqa2j4bcq3ekjdb99r6sicq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpU7CxVB2DNL43pOfIxusCAJTiA_sDj4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813979298547-p1cpj4qc7dqa2j4bcq3ekjdb99r6sicq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

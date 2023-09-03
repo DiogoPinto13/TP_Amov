@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.isec.tp_1.TopScore"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4E4E4E">
+
+    <TextView
+        android:id="@+id/menu_button_logo_credits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/top_score"
+        android:fontFamily="@font/lato_blackitalic"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:background="@color/red_dark"
+        android:textColor="@color/white"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <!-- guidelineMenuVerticalRight -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <!-- guidelineMenuHorizontalTop -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <!-- guidelineMenuHorizontalBottom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <!-- SCORE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="@string/score"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="@font/lato_regular"
+        android:background="@color/red_dark"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop">
+    </TextView>
+
+
+    <!-- score list -->
+    <TextView
+        android:id="@+id/scoreNameFirst"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/firstscorename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop" />
+
+    <TextView
+        android:id="@+id/scoreNameSecond"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/secondscorename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/scoreNameFirst" />
+    <TextView
+        android:id="@+id/scoreNameThird"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/thirdscorename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/scoreNameSecond" />
+    <TextView
+        android:id="@+id/scoreNameFourth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/fourthscorename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/scoreNameThird" />
+    <TextView
+        android:id="@+id/scoreNameFifth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/fifthscorename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/scoreNameFourth" />
+
+    <TextView
+        android:id="@+id/scoreFirst"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/scorepointfirst"
+        android:maxLength="17"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop" />
+    <TextView
+        android:id="@+id/scoreSecond"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/scorepointsecond"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/scoreFirst" />
+    <TextView
+        android:id="@+id/scoreThird"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/scorepointthird"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/scoreSecond" />
+    <TextView
+        android:id="@+id/scoreFourth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/scorepointfourth"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/scoreThird" />
+    <TextView
+        android:id="@+id/scoreFifth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/scorepointfifth"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/scoreFourth" />
+
+
+    <!-- TIME -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="40dp"
+        android:text="@string/name2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+
+
+    <!-- score list -->
+    <TextView
+        android:id="@+id/timeNameFirst"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/firstimename"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+
+    <TextView
+        android:id="@+id/timeNameSecond"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/secondtimename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/timeNameFirst" />
+    <TextView
+        android:id="@+id/timeNameThird"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/thirdtimename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/timeNameSecond" />
+    <TextView
+        android:id="@+id/timeNameFourth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/fourthtimename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/timeNameThird" />
+    <TextView
+        android:id="@+id/timeNameFifth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/fifthtimename"
+        android:maxLength="17"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/timeNameFourth" />
+
+    <TextView
+        android:id="@+id/timeFirst"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/timepointfirst"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMenuHorizontalBottom" />
+    <TextView
+        android:id="@+id/timeSecond"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/timepointsecond"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/timeFirst" />
+    <TextView
+        android:id="@+id/timeThird"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/timepointthird"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/timeSecond" />
+    <TextView
+        android:id="@+id/timeFourth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/timepointfourth"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/timeThird" />
+    <TextView
+        android:id="@+id/timeFifth"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:fontFamily="@font/lato_regular"
+        android:maxLength="17"
+        android:text="@string/timepointfifth"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toBottomOf="@+id/timeFourth" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

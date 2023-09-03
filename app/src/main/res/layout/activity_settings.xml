@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.isec.tp_1.Settings"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4E4E4E">
+
+    <!-- guidelineMenuVerticalLeft -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <!-- guidelineMenuVerticalRight -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuVerticalRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- guidelineMenuHorizontalTop -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <!-- guidelineMenuHorizontalBottom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenuHorizontalBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- menu_button_logo_credits -->
+    <TextView
+        android:id="@+id/menu_button_logo_credits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:fontFamily="@font/lato_blackitalic"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:background="@color/red_dark"
+        android:textColor="@color/white"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/settings_button_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/language"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineMenuVerticalRight"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalTop"/>
+
+    <Button
+        android:id="@+id/settings_button_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/account"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMenuVerticalRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineMenuVerticalLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineMenuHorizontalBottom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
